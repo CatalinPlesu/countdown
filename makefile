@@ -14,6 +14,7 @@ all: build install
 .PHONY: build
 build:
 	@echo "Building $(APP_NAME)..."
+	$(GO) mod tidy
 	$(GO) build $(GO_BUILD_FLAGS) -o $(APP_NAME) main.go
 
 # Install the binary to the local bin directory (without sudo)
