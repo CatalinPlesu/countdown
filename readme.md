@@ -14,28 +14,6 @@ This is a simple countdown app built with Go and Ebiten. The application allows 
 - The application is windowless (no borders, no title bar).
 - Once the countdown is complete, the app will automatically exit.
 
-## Prerequisites
-
-Before you begin, ensure that you have the following installed on your system:
-
-- **Go** (version 1.18 or newer)
-- **Ebiten** (for window management and rendering)
-- A font like **DejaVu Sans** (or another font of your choice)
-
-### Install Go
-
-You can download and install Go from the [official website](https://golang.org/dl/).
-
-### Install Dependencies
-
-To ensure you have all the required dependencies, run the following command:
-
-```bash
-go mod tidy
-```
-
-This will fetch all the necessary dependencies for the project.
-
 ### Install and Compile with Make
 
 To build and install the app, simply run:
@@ -44,9 +22,14 @@ To build and install the app, simply run:
 make
 ```
 
+Install the app already build and present here:
+```bash
+make install
+```
+
 ## Usage
 
-[Provide specific instructions on how to use the app, set the timer, etc.]
+put the desired minutes for the countdown as the first argument
 
 ```bash
 countdown minutes
